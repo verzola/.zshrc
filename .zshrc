@@ -2,7 +2,7 @@
 
 export ZSH=/home/verzola/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="random"
 DISABLE_AUTO_TITLE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
@@ -12,6 +12,6 @@ ZSH_TMUX_AUTOSTART="true"
 plugins=(git command-not-found dirhistory docker gitfast git-extras jira last-working-dir sudo tmux vi-mode web-search z)
 
 source $ZSH/oh-my-zsh.sh
-source /home/verzola/aliases/aliases.conf
+source /home/verzola/aliases.conf
 export EDITOR='vim'
 export TERM="xterm-256color-italic"
