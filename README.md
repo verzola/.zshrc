@@ -15,7 +15,7 @@ gists for debian-like here:
 https://gist.github.com/verzola/2bd147771180766c2d61a861edd68594
 https://gist.github.com/verzola/7c0df5ad7cf9a0afa9d63250ba019984
 
-## italic
+## setup terminfo
 create a file with name "term-256color-italic.terminfo" and contents:
 ```
 # A xterm-256color based TERMINFO that adds the escape sequences for italic.
