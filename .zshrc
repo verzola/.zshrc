@@ -1,5 +1,7 @@
 export PATH=$HOME/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
+export EDITOR='vim'
+export TERM="xterm-256color-italic"
 
 ZSH_THEME="robbyrussell"
 DISABLE_AUTO_TITLE="true"
@@ -12,5 +14,3 @@ plugins=(git command-not-found dirhistory docker gitfast git-extras jira last-wo
 
 source $ZSH/oh-my-zsh.sh
 source ~/aliases/aliases.conf
-export EDITOR='vim'
-export TERM="xterm-256color-italic"
