@@ -11,6 +11,6 @@ ZSH_TMUX_AUTOSTART="true"
 plugins=(git command-not-found dirhistory docker gitfast git-extras jira last-working-dir sudo tmux vi-mode web-search z)
 
 source $ZSH/oh-my-zsh.sh
-source ~/aliases.conf
+source ~/aliases/aliases.conf
 export EDITOR='vim'
 export TERM="xterm-256color-italic"
