@@ -8,7 +8,7 @@
 
 ## install
 ```sh
-curl https://raw.githubusercontent.com/verzola/.zshrc/master/install.sh | bash
+$ curl https://raw.githubusercontent.com/verzola/.zshrc/master/install.sh | bash
 ```
 ## setup terminfo
 create a file with name "term-256color-italic.terminfo" and contents:
