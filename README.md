@@ -6,15 +6,10 @@
 - oh-my-zsh
 - tmux
 
-## true colors
-if you want to have truecolors, use a editor from this list:
-https://gist.github.com/XVilka/8346728
-
-if you have any problems with tmux or vim, be sure to use the latest version of both.
-gists for debian-like here:
-https://gist.github.com/verzola/2bd147771180766c2d61a861edd68594
-https://gist.github.com/verzola/7c0df5ad7cf9a0afa9d63250ba019984
-
+## install
+```sh
+curl https://raw.githubusercontent.com/verzola/.zshrc/master/install.sh | bash
+```
 ## setup terminfo
 create a file with name "term-256color-italic.terminfo" and contents:
 ```
@@ -27,3 +22,12 @@ and execute:
 ```sh
 $ tic xterm-256color-italic.terminfo
 ```
+
+## true colors
+if you want to have truecolors, use a terminal from this list:
+https://gist.github.com/XVilka/8346728
+
+if you have any problems with tmux or vim, be sure to use the latest version of both.
+compile instructions here:
+https://gist.github.com/verzola/2bd147771180766c2d61a861edd68594
+https://gist.github.com/verzola/7c0df5ad7cf9a0afa9d63250ba019984
