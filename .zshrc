@@ -1,7 +1,7 @@
 export PATH=$HOME/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 export EDITOR='vim'
-export TERM="xterm-256color-italic"
+export TERM="xterm-256color"
 
 ZSH_THEME="robbyrussell"
 
