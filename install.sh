@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+mkdir -p ~/projects/verzola/
+
 if [ -d ~/.oh-my-zsh ]; then
   echo "Updating Oh My Zsh..."
   zsh -ic "upgrade_oh_my_zsh"
