@@ -1,5 +1,5 @@
 # .zshrc
 
 ```sh
-$ curl https://raw.githubusercontent.com/verzola/.zshrc/master/install.sh | bash
+$ sh -c "$(wget -O - https://zsh.verzola.net)"
 ```
