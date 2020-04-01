@@ -25,6 +25,16 @@ export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=$PATH:$HOME/.npm-global/bin
 export PATH=$PATH:$HOME/bin
 
+
+###############
+### HISTORY ###
+###############
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY
+setopt appendhistory
+
 ###############
 ### ALIASES ###
 ###############
@@ -46,3 +56,4 @@ if ! zplug check --verbose; then
 fi
 
 zplug load --verbose
+
