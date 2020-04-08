@@ -7,7 +7,6 @@ fi
 
 source ~/.zplug/init.zsh
 
-zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/z", from:oh-my-zsh
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions"
