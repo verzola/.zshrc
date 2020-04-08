@@ -14,6 +14,7 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+zplug "paulirish/git-open", as:plugin
 
 ###############
 ## ENV VARS ###
@@ -23,8 +24,8 @@ export TERM="xterm-256color"
 export PATH=$PATH:/snap/bin/
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=$PATH:$HOME/.npm-global/bin
+export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/bin
-
 
 ###############
 ### HISTORY ###
@@ -55,5 +56,19 @@ if ! zplug check --verbose; then
     fi
 fi
 
-zplug load --verbose
+zplug load #--verbose
 
+SPACESHIP_PROMPT_ORDER=(
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  package       # Package version
+  exec_time     # Execution time
+  line_sep      # Line break
+  vi_mode       # Vi-mode indicator
+  jobs          # Background jobs indicator
+  exit_code     # Exit code section
+  char          # Prompt character
+)
+
+SPACESHIP_CHAR_SYMBOL="->"
+SPACESHIP_CHAR_SUFFIX=" "
