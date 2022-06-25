@@ -5,7 +5,7 @@ if [[ ! -d ~/.zplug ]];then
   git clone https://github.com/zplug/zplug ~/.zplug
 fi
 
-source ~/.zplug/init.zsh
+source $HOME/.zplug/init.zsh
 
 zplug "plugins/z", from:oh-my-zsh
 zplug "zsh-users/zsh-completions"
@@ -50,12 +50,12 @@ setopt extended_glob
 ###############
 ### ALIASES ###
 ###############
-source ~/projects/verzola/aliases/aliases.conf
+source $HOME/projects/verzola/aliases/aliases.conf
 
 ###############
 ##### FZF #####
 ###############
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source $HOME/.fzf.zsh
 
 ###############
 #### ZPLUG ####
@@ -84,7 +84,7 @@ SPACESHIP_PROMPT_ORDER=(
 SPACESHIP_CHAR_SYMBOL="->"
 SPACESHIP_CHAR_SUFFIX=" "
 
-[ -f ~/.secrets.zsh ] && source ~/.secrets.zsh
+[ -f ~/.secrets.zsh ] && source $HOME/.secrets.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -96,4 +96,3 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 export PATH=/usr/bin:$PATH
-export DOCKER_HOST=unix:///run/user/1000/docker.sock
