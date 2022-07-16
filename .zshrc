@@ -8,10 +8,10 @@ fi
 source $HOME/.zplug/init.zsh
 
 zplug "plugins/z", from:oh-my-zsh
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-syntax-highlighting"
-zplug "zsh-users/zsh-history-substring-search"
+#zplug "zsh-users/zsh-completions"
+#zplug "zsh-users/zsh-autosuggestions"
+#zplug "zsh-users/zsh-syntax-highlighting"
+#zplug "zsh-users/zsh-history-substring-search"
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
 
 ###############
@@ -23,19 +23,7 @@ export PATH=$PATH:/snap/bin/
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/bin
-export PATH=$PATH:$HOME/.pyenv/versions/3.7.2/bin
-export PATH=$PATH:/usr/local/go/bin
-
-#android
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$HOME/go/bin
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export ANDROID_HOME=$HOME/Android/Sdk
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$PATH:/home/verzola/projects/verzola/neovim-config/lua-language-server/bin
 
 ###############
 ### HISTORY ###
@@ -96,3 +84,4 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
 
 export PATH=/usr/bin:$PATH
+alias luamake=/home/verzola/projects/verzola/neovim-config/lua-language-server/3rd/luamake/luamake
